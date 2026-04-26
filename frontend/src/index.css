@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .netflix-button {
+    @apply bg-red-600 text-white px-6 py-2 rounded font-semibold hover:bg-red-700 transition duration-300;
+  }
+
+  .netflix-button-outline {
+    @apply border border-gray-300 text-white px-4 py-1 rounded hover:border-white hover:bg-white/10 transition;
+  }
+
+  .movie-card {
+    @apply relative flex-none w-[180px] md:w-[200px] lg:w-[230px] transition-transform duration-300 hover:scale-105 cursor-pointer;
+  }
+
+  .movie-poster {
+    @apply rounded-md object-cover w-full h-auto;
+  }
+}
